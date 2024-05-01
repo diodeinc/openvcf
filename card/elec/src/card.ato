@@ -1,10 +1,10 @@
-from "components/nfc.ato" import NT3H1101W0FHKH
+from "components/NT3H1101W0FHKH.ato" import NT3H1101W0FHKH
 
 module Card:
-    signal gnd
-    signal vcc
+    signal GND
+    signal VCC
 
     nfc = new NT3H1101W0FHKH
 
-    nfc.vss ~ gnd
-    nfc.vcc ~ vcc
+    nfc.VSS ~ GND
+    nfc.VCC ~ VCC

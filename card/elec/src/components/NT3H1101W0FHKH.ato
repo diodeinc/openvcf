@@ -1,0 +1,15 @@
+component NT3H1101W0FHKH:
+    # component NT3H1101W0FHKH
+    footprint = "XQFN-8_L1.6-W1.6-P0.50-BR"
+    lcsc_id = "C73156"
+    # pins
+    signal LA ~ pin 1
+    signal VSS ~ pin 2
+    signal SCL ~ pin 3
+    signal FD ~ pin 4
+    signal SDA ~ pin 5
+    signal VCC ~ pin 6
+    signal VOUT ~ pin 7
+    signal LB ~ pin 8
+    signal EP ~ pin 9
+
