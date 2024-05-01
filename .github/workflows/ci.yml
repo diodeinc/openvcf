@@ -1,0 +1,21 @@
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build
+        uses: docker://ghcr.io/atopile/atopile-kicad
+        with:
+          path: card
+
+      - name: Upload Combined Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: card/build
