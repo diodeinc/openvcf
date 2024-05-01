@@ -1,0 +1,12 @@
+
+component NT3H1101W0FHKH:
+    signal la ~ pin 1
+    signal vss ~ pin 2
+    signal scl ~ pin 3
+    signal fd ~ pin 4
+    signal lb ~ pin 5
+    signal vout ~ pin 6
+    signal vcc ~ pin 7
+    signal sda ~ pin 8
+
+    footprint = "XQFN8"
