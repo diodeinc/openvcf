@@ -1,0 +1,7 @@
+component HMNFC_Class6:
+    # component HM_NFC_Class6
+    footprint = "HM-NFC-Class6-Antenna"
+    # pins
+    signal LA ~ pin 1
+    signal LB ~ pin 2
+
