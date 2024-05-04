@@ -1,15 +1,19 @@
 from "generics/capacitors.ato" import Capacitor
-from "generics/leds.ato" import LEDIndicatorRed
+from "generics/leds.ato" import LED, LEDIndicator
 
 from "nfc/NT3H1101W0FHKH.ato" import NT3H1101W0FHKH
 from "nfc/HMNFC.ato" import HMNFC_Class6
 
+module LedYellow from LED:
+    mpn = "C20608782"
+    v_f = 2volt
+    i_max = 20mA
+    footprint = "R0402"
 
-module RadioIndicator from LEDIndicatorRed:
-    led.lcsc_id = "C73156"
+module NfcIndicator from LEDIndicator:
+    led -> LedYellow
+    resistor.footprint = "R0402"
     resistor.value = 50ohm
-    v_in = 2.2volt
-
 
 module Card:
     signal GND
@@ -26,11 +30,12 @@ module Card:
 
     cap = new Capacitor
     cap.footprint = "C0402"
-    cap.value = 200pF
+    cap.value = 220nF
     cap.p1 ~ nfc.VOUT
     cap.p2 ~ GND
 
-    led = new RadioIndicator
+    led = new NfcIndicator
     led.input ~ nfc.VOUT
     led.gnd ~ GND
+    led.v_in = nfc.v_out
 

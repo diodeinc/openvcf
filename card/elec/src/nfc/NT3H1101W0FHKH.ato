@@ -12,4 +12,6 @@ component NT3H1101W0FHKH:
     signal VOUT ~ pin 7
     signal LB ~ pin 8
     signal EP ~ pin 9
+    # properties
+    v_out = 2.2volt
 
