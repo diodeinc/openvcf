@@ -1,0 +1,13 @@
+from "generics/leds.ato" import LED
+
+component APHHS1005SYCK from LED:
+    # component APHHS1005SYCK
+    footprint = "LED-SMD_L1.0-W0.5-RD"
+    mpn = "C5875733"
+    # pins
+    signal cathode ~ pin 1
+    signal anode ~ pin 2
+    # properties
+    v_f = 2V
+    i_max = 20mA
+

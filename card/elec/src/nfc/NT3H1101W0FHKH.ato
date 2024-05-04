@@ -1,7 +1,7 @@
 component NT3H1101W0FHKH:
     # component NT3H1101W0FHKH
     footprint = "XQFN-8_L1.6-W1.6-P0.50-BR"
-    lcsc_id = "C73156"
+    mpn = "C73156"
     # pins
     signal LA ~ pin 1
     signal VSS ~ pin 2
