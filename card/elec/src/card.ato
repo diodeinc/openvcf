@@ -8,7 +8,7 @@ from "led/APHHS1005SYCK.ato" import APHHS1005SYCK
 module NfcIndicator from LEDIndicator:
     led -> APHHS1005SYCK
     resistor.footprint = "R0402"
-    resistor.value = 50ohm
+    resistor.value = 470ohm
 
 module Card:
     signal GND
@@ -25,7 +25,7 @@ module Card:
 
     cap = new Capacitor
     cap.footprint = "C0402"
-    cap.value = 220nF
+    cap.value = 200nF to 400uF
     cap.p1 ~ nfc.VOUT
     cap.p2 ~ GND
 

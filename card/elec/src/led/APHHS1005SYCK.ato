@@ -8,6 +8,6 @@ component APHHS1005SYCK from LED:
     signal cathode ~ pin 1
     signal anode ~ pin 2
     # properties
-    v_f = 2V
+    v_f = 1.7V
     i_max = 20mA
 
