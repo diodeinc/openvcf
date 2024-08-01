@@ -4,7 +4,9 @@
 Open-source, customizable PCB printed business cards with writable NFC tag, powered by @atopile. The name is a reference to the [VCF](https://en.wikipedia.org/wiki/VCard)
 format.
 
+
 ![video](./media/video.mov)
+
 
 ## Schematics
 
