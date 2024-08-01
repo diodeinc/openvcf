@@ -1,12 +1,10 @@
 # OpenVCF
 
-Open source PCB printed business cards based on NFC, coded in atopile.
 
-![card](./media/card.png)
-
-Open-source, customizable PCB printed business cards with writable NFC tag.
-The name is a reference to the [VCF](https://en.wikipedia.org/wiki/VCard)
+Open-source, customizable PCB printed business cards with writable NFC tag, powered by @atopile. The name is a reference to the [VCF](https://en.wikipedia.org/wiki/VCard)
 format.
+
+![video](./media/video.mov)
 
 ## Schematics
 
@@ -19,9 +17,6 @@ Schematics are really straighforward, with just 4 components
 
 The NT3H1101W0FHKH is really cool, a writable NFC tag that just needs an antenna.
 It will generate enough power from the NFC field to light up a LED.
-
-
-![video](./media/video.mov)
 
 
 ## Ordering 
