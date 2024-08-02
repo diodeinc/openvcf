@@ -4,6 +4,9 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: card
 
     steps:
       - name: Checkout code
@@ -12,10 +15,10 @@ jobs:
       - name: Build
         uses: docker://ghcr.io/atopile/atopile-kicad
         with:
-          path: card
+          path: .
 
       - name: Upload Combined Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: card/build
+          path: build
