@@ -8,7 +8,8 @@ from "led/APHHS1005SYCK.ato" import APHHS1005SYCK
 module NfcIndicator from LEDIndicator:
     led -> APHHS1005SYCK
     resistor.footprint = "R0402"
-    resistor.value = 470ohm
+    resistor.value = 1kohm
+    current = 0.4mA to 0.8mA
 
 module Card:
     signal GND
