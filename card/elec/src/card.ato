@@ -26,7 +26,7 @@ module Card:
 
     cap = new Capacitor
     cap.footprint = "C0402"
-    cap.value = 220uF
+    cap.value = 150nF to 200nF
     cap.p1 ~ nfc.VOUT
     cap.p2 ~ GND
 
